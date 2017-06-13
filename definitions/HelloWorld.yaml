@@ -40,9 +40,8 @@ x-ibm-configuration:
   assembly:
     execute:
       - invoke:
-          target-url: >-
-            https://apiconnect-2a0de1a8-6a40-4edd-bd53-ee6fa2cb6a55.apiconnecttestorg-dev.apic.au-syd.mybluemix.net/$(request.path)$(request.search)
-          tls-profile: 'client:Loopback-client'
+          target-url: $(request.path)$(request.search)
+          tls-profile: ''
   properties:
     runtime-url:
       value: ''
