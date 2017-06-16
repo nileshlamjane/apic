@@ -39,7 +39,7 @@ x-ibm-configuration:
     execute:
       - invoke:
           target-url: $(runtime-url)$(request.path)$(request.search)
-  gateway: datapower-gateway
+  gateway: micro-gateway
 paths:
   '/Users/{id}/accessTokens/{fk}':
     get:
