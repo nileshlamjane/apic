@@ -2,7 +2,7 @@
   <description>SOAP UI Testcase execution</description>
 
 <property environment="env"/>
-<property name="path.buildscript" value="SoapUI-Test" />
+<property name="path.buildscript" value="APIConnect-Pull/SoapUI-Test" />
 <property name="soapui.report.dir" value="${basedir}/SoapUI-Test/soapui_test_reports"/>
 <property name="soapui.project" value="${basedir}/${path.buildscript}/HelloWorld.xml"/>
 
