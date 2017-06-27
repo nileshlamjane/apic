@@ -39,7 +39,7 @@ x-ibm-configuration:
     execute:
       - invoke:
           target-url: >-
-            https://apiconnect-efdbf8f0-b2db-427d-8197-cedcfdbdcc85.apiconnectorg-dev.apic.mybluemix.net$(request.path)$(request.search)
+            $(runtime-url)$(request.path)$(request.search)
           tls-profile: 'client:Loopback-client'
   gateway: datapower-gateway
 paths:
